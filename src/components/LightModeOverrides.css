@@ -1,0 +1,445 @@
+/* ==========================================
+   LIGHT MODE COMPREHENSIVE FIX - V4
+========================================== */
+
+/* 1. Global Reset for Light Mode */
+[data-theme="light"] body,
+[data-theme="light"] .app-container {
+    background: #f8f9fa !important;
+    color: #2c3e50 !important;
+}
+
+/* 2. Navbar Fixes */
+[data-theme="light"] .navbar-premium,
+[data-theme="light"] .navbar {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .navbar-scrolled {
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .navbar-logo {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .nav-link {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .nav-link-active {
+    color: #915EFF !important;
+    background: rgba(145, 94, 255, 0.1) !important;
+}
+
+/* 3. Projects Fixes */
+[data-theme="light"] .project-card-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .project-title-premium {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .project-desc-premium {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .project-tags span {
+    background: rgba(145, 94, 255, 0.1) !important;
+    color: #915EFF !important;
+}
+
+/* 4. Certificates Fixes */
+[data-theme="light"] .certificate-card-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .certificate-title {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .certificate-issuer,
+[data-theme="light"] .certificate-date {
+    color: #5a6c7d !important;
+}
+
+/* 5. About Section Fixes */
+[data-theme="light"] .about-section-premium {
+    background: transparent !important;
+}
+
+[data-theme="light"] .about-content-card,
+[data-theme="light"] .stat-item {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .about-text {
+    color: #5a6c7d !important;
+}
+
+/* 6. Contact Section Fixes */
+[data-theme="light"] .contact-info-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .contact-form-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .contact-card-title {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .contact-card-value {
+    color: #5a6c7d !important;
+}
+
+/* Form inputs in light mode */
+[data-theme="light"] .contact-form-premium input,
+[data-theme="light"] .contact-form-premium textarea,
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea {
+    background: #f8f9fa !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group textarea:focus,
+[data-theme="light"] .contact-form-premium input:focus,
+[data-theme="light"] .contact-form-premium textarea:focus {
+    background: #ffffff !important;
+    border-color: #915EFF !important;
+    box-shadow: 0 0 0 3px rgba(145, 94, 255, 0.1) !important;
+}
+
+/* 7. Common Text Fixes */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] .section-title-premium {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .section-subtitle-premium {
+    color: #5a6c7d !important;
+}
+
+/* 8. Fix specific black backgrounds */
+[data-theme="light"] .premium-section,
+[data-theme="light"] section {
+    background: transparent !important;
+}
+
+/* Remove default dark gradients in light mode */
+[data-theme="light"] .hero-section::before,
+[data-theme="light"] .projects-section::before {
+    opacity: 0 !important;
+}
+
+/* 9. Specific Section Backgrounds for Light Mode */
+[data-theme="light"] #about {
+    background: #ffffff !important;
+}
+
+[data-theme="light"] #education {
+    background: #f0f4f8 !important;
+    /* Light Gray/Blue for contrast */
+}
+
+[data-theme="light"] #projects {
+    background: #ffffff !important;
+}
+
+/* 10. Navbar Active Indicator Full Width in Light Mode */
+[data-theme="light"] .nav-link-indicator {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    bottom: 0 !important;
+    border-radius: 4px 4px 0 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #915EFF, #667eea) !important;
+}
+
+/* 11. Hero Section Light Mode Fixes */
+[data-theme="light"] .particle-background {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 150%) !important;
+}
+
+[data-theme="light"] .particle-overlay {
+    background: radial-gradient(circle at 30% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 60%) !important;
+}
+
+[data-theme="light"] .hero-text h1,
+[data-theme="light"] .hero-text .tag {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .tag {
+    background: #ffffff !important;
+    color: #915EFF !important;
+    border: 1px solid rgba(145, 94, 255, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .name-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+[data-theme="light"] .animated-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+[data-theme="light"] .hero-text .description,
+[data-theme="light"] .desc-item span {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .desc-item i {
+    background: #ffffff !important;
+    color: #915EFF !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(145, 94, 255, 0.1) !important;
+}
+
+/* 12. About Section Specific Fixes */
+[data-theme="light"] .section-badge-gradient {
+    background: rgba(145, 94, 255, 0.1) !important;
+    color: #915EFF !important;
+    border: 1px solid rgba(145, 94, 255, 0.2) !important;
+}
+
+[data-theme="light"] .section-title-premium {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .about-main-card,
+[data-theme="light"] .about-skill-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .about-greeting,
+[data-theme="light"] .highlight-name,
+[data-theme="light"] .stat-number,
+[data-theme="light"] .skill-title {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .about-intro,
+[data-theme="light"] .about-description,
+[data-theme="light"] .stat-label,
+[data-theme="light"] .skill-desc {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .highlight-text {
+    color: #667eea !important;
+    font-weight: 600 !important;
+}
+
+[data-theme="light"] .skill-icon {
+    background: rgba(145, 94, 255, 0.1) !important;
+    color: #915EFF !important;
+}
+
+/* 13. Social Icons Light Mode Override */
+[data-theme="light"] .social-icon {
+    background: #ffffff !important;
+    color: #5a6c7d !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .social-icon:hover {
+    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-5px) !important;
+    border-color: transparent !important;
+}
+
+[data-theme="light"] .social-icon .icon-background {
+    display: none !important;
+}
+
+[data-theme="light"] .social-icon:hover i,
+[data-theme="light"] .social-icon:hover svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    z-index: 10;
+}
+
+/* 14. Education Section Light Mode Fixes */
+[data-theme="light"] .section-badge-education {
+    background: rgba(86, 171, 47, 0.1) !important;
+    color: #56ab2f !important;
+    border: 1px solid rgba(86, 171, 47, 0.2) !important;
+}
+
+[data-theme="light"] .education-card-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .education-title-premium {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .education-institution span {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .education-date-badge span {
+    color: #2c3e50 !important;
+    font-weight: 600 !important;
+}
+
+[data-theme="light"] .education-point-item {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .education-point-item::before {
+    background-color: #56ab2f !important;
+}
+
+/* 15. Certificates Section Light Mode Fixes */
+[data-theme="light"] .section-badge-gold {
+    background: rgba(255, 215, 0, 0.1) !important;
+    color: #d4af37 !important;
+    border: 1px solid rgba(255, 215, 0, 0.2) !important;
+}
+
+[data-theme="light"] .certificate-card-premium,
+[data-theme="light"] .certificate-modal-content {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .certificate-title,
+[data-theme="light"] .modal-certificate-info h3 {
+    color: #2c3e50 !important;
+}
+
+[data-theme="light"] .certificate-issuer,
+[data-theme="light"] .certificate-date,
+[data-theme="light"] .modal-issuer,
+[data-theme="light"] .modal-date {
+    color: #5a6c7d !important;
+}
+
+[data-theme="light"] .view-certificate-text {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .certificate-overlay {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 16. Advanced Project Card Cleanup for Light Mode */
+[data-theme="light"] .project-content-premium {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+}
+
+[data-theme="light"] .project-gradient-bg {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+[data-theme="light"] .project-image-container {
+    background: #f0f4f8 !important;
+}
+
+[data-theme="light"] .project-overlay {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%) !important;
+}
+
+[data-theme="light"] .project-btn-premium {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3) !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+[data-theme="light"] .project-btn-premium:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+[data-theme="light"] .project-btn-secondary {
+    background: transparent !important;
+    border: 2px solid #764ba2 !important;
+    color: #764ba2 !important;
+    box-shadow: none !important;
+}
+
+[data-theme="light"] .project-btn-secondary:hover {
+    background: rgba(118, 75, 162, 0.05) !important;
+    border-color: #667eea !important;
+    color: #667eea !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.1) !important;
+}
+
+/* 17. Advanced Education Card Cleanup */
+[data-theme="light"] .education-card-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] .education-card-premium:hover {
+    border-color: rgba(86, 171, 47, 0.3) !important;
+    box-shadow: 0 15px 40px rgba(86, 171, 47, 0.15) !important;
+}
+
+[data-theme="light"] .education-pattern {
+    display: none !important;
+}
+
+[data-theme="light"] .education-icon-badge {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 18. General Section Cleanups */
+[data-theme="light"] .premium-section {
+    background: transparent !important;
+}
+
+[data-theme="light"] .section-subtitle-premium {
+    color: #5a6c7d !important;
+}

@@ -1,0 +1,174 @@
+/* Creative UI Enhancements */
+
+/* Animated Gradient Background for Hero */
+.hero-background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Glassmorphism Navbar Enhancement */
+/* Glassmorphism Floating Navbar Enhancement */
+.navbar {
+    padding: 10px 30px;
+    position: fixed;
+    width: 90%;
+    max-width: 800px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(5, 8, 22, 0.6);
+    /* Slightly dark transparent base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    /* Pill shape */
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar.scrolled {
+    background: rgba(5, 8, 22, 0.85);
+    box-shadow: 0 15px 40px -10px rgba(145, 94, 255, 0.15);
+    /* Purple glow on scroll */
+    border-color: rgba(145, 94, 255, 0.2);
+    top: 15px;
+    /* Slightly animate up */
+    padding: 12px 30px;
+}
+
+.nav-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-items a {
+    position: relative;
+    padding: 8px 16px;
+    z-index: 1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-items a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #915EFF 0%, #ff0080 100%);
+    border-radius: 20px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.nav-items a:hover::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.nav-items a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Floating Shapes in Hero */
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: floatShape 20s infinite linear;
+}
+
+.hero::before {
+    top: -100px;
+    left: -100px;
+    background: radial-gradient(circle, rgba(231, 76, 60, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.hero::after {
+    bottom: -100px;
+    right: -100px;
+    animation-direction: reverse;
+}
+
+@keyframes floatShape {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(50px, 50px) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(-50px, 100px) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+/* Text Glow Effect */
+h1 span.highlight {
+    text-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+/* Section Dividers (Wave) */
+.section-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.section-divider .shape-fill {
+    fill: var(--bg-color);
+}
