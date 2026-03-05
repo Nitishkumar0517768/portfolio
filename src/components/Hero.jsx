@@ -82,7 +82,7 @@ const Hero = () => {
                             { icon: FaGithub, href: "https://github.com/Nitishkumar0517768" },
                             { icon: SiLeetcode, href: "https://leetcode.com/u/Nitishkumar_05/" },
                             { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/nitish-kumar-03a34a3a1/" },
-                            { icon: FaTwitter, href: "#" },
+                            { icon: FaTwitter, href: "https://x.com/Nitishkumar05cg" },
                             { icon: FaInstagram, href: "https://www.instagram.com/n_i_t_i_s_h_05/" }
                         ].map((social, idx) => (
                             <a
