@@ -35,7 +35,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="bg-[#E5E7EB] dark:bg-[#0B1F1A] min-h-screen font-inter text-[#0B1F1A] dark:text-[#E5E7EB] overflow-x-hidden transition-colors duration-300">
+    <div className="bg-[#E5E7EB] dark:bg-[#0a0a0a] min-h-screen font-inter text-[#0a0a0a] dark:text-[#E5E7EB] overflow-x-hidden transition-colors duration-300">
       <Loader />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />

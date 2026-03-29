@@ -17,14 +17,14 @@ const Loader = () => {
                 <motion.div
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
-                    className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0B1F1A]"
+                    className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0a0a0a]"
                 >
                     <div className="relative flex flex-col items-center">
                         {/* Spinner */}
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-                            className="w-16 h-16 rounded-full border-4 border-[#10B981]/20 border-t-[#10B981] mb-6 shadow-[0_0_15px_rgba(16,185,129,0.5)]"
+                            className="w-16 h-16 rounded-full border-4 border-[#FFA040]/20 border-t-[#FFA040] mb-6 shadow-[0_0_15px_rgba(16,185,129,0.5)]"
                         />
                         {/* Text */}
                         <motion.h2
@@ -39,7 +39,7 @@ const Loader = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5, duration: 0.5 }}
-                            className="text-[#10B981] mt-2 text-sm tracking-widest uppercase opacity-70"
+                            className="text-[#FFA040] mt-2 text-sm tracking-widest uppercase opacity-70"
                         >
                             Developer Portfolio
                         </motion.p>

@@ -89,7 +89,7 @@
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #915EFF;
+    color: #FF6B6B;
     font-size: 18px;
     z-index: 1;
 }
@@ -134,7 +134,7 @@
 .submit-btn-premium {
     width: 100%;
     padding: 16px 32px;
-    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF6B6B 100%);
     border: none;
     border-radius: 14px;
     color: #ffffff;

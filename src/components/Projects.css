@@ -19,7 +19,7 @@
 .section-badge {
     display: inline-block;
     padding: 8px 24px;
-    background: #667eea;
+    background: #FF6B6B;
     color: white;
     border-radius: 50px;
     font-size: 12px;
@@ -103,7 +103,7 @@
     right: 20px;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF6B6B 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
-    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF6B6B 100%);
     padding: 12px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(145, 94, 255, 0.5);
@@ -250,7 +250,7 @@
 .project-btn-premium {
     padding: 12px 24px;
     border-radius: 12px;
-    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF6B6B 100%);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +267,7 @@
 }
 
 .project-btn-premium:hover {
-    background: #764ba2;
+    background: #FFA040;
     box-shadow: 0 12px 30px rgba(145, 94, 255, 0.6);
     transform: translateY(-3px);
 }
@@ -326,7 +326,7 @@
     display: inline-block;
     padding: 4px 12px;
     background: rgba(145, 94, 255, 0.1);
-    color: #915EFF;
+    color: #FF6B6B;
     border-radius: 20px;
     font-size: 11px;
     font-weight: 600;
@@ -408,7 +408,7 @@
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #915EFF;
+    background: #FF6B6B;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -493,7 +493,7 @@
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
-    background: #915EFF;
+    background: #FF6B6B;
     padding: 10px 22px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(145, 94, 255, 0.5);
@@ -556,7 +556,7 @@
 
 .certificate-issuer {
     font-size: 15px;
-    color: #915EFF;
+    color: #FF6B6B;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -649,7 +649,7 @@
 
 .modal-issuer {
     font-size: 20px;
-    color: #915EFF;
+    color: #FF6B6B;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -674,7 +674,7 @@
 .certificate-divider {
     width: 60px;
     height: 3px;
-    background: #915EFF;
+    background: #FF6B6B;
     margin: 0 auto 16px;
     border-radius: 10px;
 }
@@ -698,7 +698,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    color: #915EFF;
+    color: #FF6B6B;
     font-weight: 600;
     font-size: 15px;
 }
@@ -847,7 +847,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #915EFF;
+    color: #FF6B6B;
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 16px;
@@ -1008,7 +1008,7 @@
 .about-greeting {
     font-size: 32px;
     font-weight: 700;
-    color: #667eea;
+    color: #FF6B6B;
     background: none;
     -webkit-text-fill-color: initial;
     margin-bottom: 20px;
@@ -1022,7 +1022,7 @@
 }
 
 .highlight-name {
-    color: #915EFF;
+    color: #FF6B6B;
     background: none;
     -webkit-text-fill-color: initial;
     font-weight: 700;
@@ -1030,7 +1030,7 @@
 }
 
 .highlight-text {
-    color: #667eea;
+    color: #FF6B6B;
     font-weight: 600;
 }
 
@@ -1066,7 +1066,7 @@
 .stat-number {
     font-size: 36px;
     font-weight: 800;
-    color: #667eea;
+    color: #FF6B6B;
     background: none;
     -webkit-text-fill-color: initial;
     margin-bottom: 8px;
@@ -1106,7 +1106,7 @@
     width: 60px;
     height: 60px;
     margin: 0 auto 16px;
-    background: #915EFF;
+    background: #FF6B6B;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1192,7 +1192,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #915EFF;
+    color: #FF6B6B;
     font-size: 18px;
     opacity: 0;
     transition: all 0.3s ease;
@@ -1208,7 +1208,7 @@
     text-align: center;
     margin-top: 16px;
     font-size: 13px;
-    color: #915EFF;
+    color: #FF6B6B;
     opacity: 0;
     transition: opacity 0.3s ease;
 }

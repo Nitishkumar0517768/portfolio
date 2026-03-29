@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { certificates } from "../constants";
 import { FaAward, FaTimes, FaEye } from 'react-icons/fa';
-import BackgroundBlobs from './BackgroundBlobs';
 
 const CertificateCard = ({ index, name, issuer, date, image, onClick }) => (
     <motion.div
@@ -16,7 +15,7 @@ const CertificateCard = ({ index, name, issuer, date, image, onClick }) => (
         className="w-full flex"
     >
         <div
-            className="group relative w-full flex flex-col bg-[#0a1814] rounded-2xl overflow-hidden border border-[#10B981]/10 shadow-lg hover:border-[#10B981]/30 hover:shadow-xl hover:shadow-[#10B981]/10 transition-all duration-300 cursor-pointer"
+            className="group relative w-full flex flex-col bg-[#050505] rounded-2xl overflow-hidden border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:shadow-xl hover:shadow-[#FFA040]/10 transition-all duration-300 cursor-pointer"
             onClick={onClick}
         >
             {/* Certificate Image */}
@@ -26,8 +25,8 @@ const CertificateCard = ({ index, name, issuer, date, image, onClick }) => (
                     alt={name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#0B1F1A]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="flex items-center gap-2 bg-[#10B981]/20 text-[#10B981] px-4 py-2 rounded-lg border border-[#10B981]/30 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-[#0a0a0a]/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="flex items-center gap-2 bg-[#FFA040]/20 text-[#FFA040] px-4 py-2 rounded-lg border border-[#FFA040]/30 backdrop-blur-sm">
                         <FaEye /> View Certificate
                     </span>
                 </div>
@@ -35,13 +34,13 @@ const CertificateCard = ({ index, name, issuer, date, image, onClick }) => (
 
             {/* Content */}
             <div className="flex flex-col flex-1 p-6 md:p-8 relative">
-                <div className="absolute top-0 right-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-[#10B981]/10 border border-[#10B981]/20 text-[#10B981] shadow-lg backdrop-blur-md">
+                <div className="absolute top-0 right-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-[#FFA040]/10 border border-[#FFA040]/20 text-[#FFA040] shadow-lg backdrop-blur-md">
                     <FaAward size={20} />
                 </div>
 
-                <h3 className="text-xl font-bold text-[#E5E7EB] mb-2 mt-2 group-hover:text-[#10B981] transition-colors">{name}</h3>
-                <div className="flex justify-between items-center text-sm font-medium mt-auto pt-4 border-t border-[#10B981]/10">
-                    <span className="text-[#10B981]/80">{issuer}</span>
+                <h3 className="text-xl font-bold text-[#E5E7EB] mb-2 mt-2 group-hover:text-[#FFA040] transition-colors">{name}</h3>
+                <div className="flex justify-between items-center text-sm font-medium mt-auto pt-4 border-t border-[#FFA040]/10">
+                    <span className="text-[#FFA040]/80">{issuer}</span>
                     <span className="text-[#E5E7EB]/50">{date}</span>
                 </div>
             </div>
@@ -55,14 +54,14 @@ const CertificateModal = ({ certificate, onClose }) => {
     return (
         <AnimatePresence>
             <motion.div
-                className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0B1F1A]/80 backdrop-blur-sm p-4"
+                className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0a0a0a]/80 backdrop-blur-sm p-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={onClose}
             >
                 <motion.div
-                    className="relative w-full max-w-3xl bg-[#0a1814] rounded-2xl border border-[#10B981]/20 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+                    className="relative w-full max-w-3xl bg-[#050505] rounded-2xl border border-[#FFA040]/20 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
                     initial={{ scale: 0.9, opacity: 0, y: 20 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
                     exit={{ scale: 0.9, opacity: 0, y: 20 }}
@@ -70,7 +69,7 @@ const CertificateModal = ({ certificate, onClose }) => {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <button
-                        className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#0B1F1A]/50 text-[#E5E7EB] hover:bg-[#10B981] hover:text-[#0B1F1A] transition-colors backdrop-blur-sm"
+                        className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#0a0a0a]/50 text-[#E5E7EB] hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors backdrop-blur-sm"
                         onClick={onClose}
                     >
                         <FaTimes size={18} />
@@ -84,7 +83,7 @@ const CertificateModal = ({ certificate, onClose }) => {
                         <div>
                             <h3 className="text-2xl font-bold text-[#E5E7EB] mb-2">{certificate.name}</h3>
                             <div className="flex items-center gap-4 text-sm font-medium">
-                                <span className="text-[#10B981]">{certificate.issuer}</span>
+                                <span className="text-[#FFA040]">{certificate.issuer}</span>
                                 <span className="text-[#E5E7EB]/50">{certificate.date}</span>
                             </div>
                         </div>
@@ -94,7 +93,7 @@ const CertificateModal = ({ certificate, onClose }) => {
                                 href={certificate.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 rounded-lg bg-[#10B981]/10 text-[#10B981] font-semibold border border-[#10B981]/20 hover:bg-[#10B981] hover:text-[#0B1F1A] transition-colors whitespace-nowrap"
+                                className="px-6 py-3 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors whitespace-nowrap"
                             >
                                 Verify Credential
                             </a>
@@ -110,8 +109,7 @@ const Certificates = () => {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
 
     return (
-        <section id="certificates" className="relative py-20 bg-[#0B1F1A]">
-            <BackgroundBlobs />
+        <section id="certificates" className="relative py-20 bg-[#0a0a0a]">
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -120,7 +118,7 @@ const Certificates = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-[#10B981]/10 text-[#10B981] text-sm font-semibold tracking-wider mb-4 border border-[#10B981]/20">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Achievements
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB] mb-4">Certifications</h2>

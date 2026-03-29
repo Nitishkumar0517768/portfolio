@@ -35,7 +35,7 @@
 
 [data-theme="light"] .nav-link:hover,
 [data-theme="light"] .nav-link-active {
-    color: #915EFF !important;
+    color: #FF6B6B !important;
     background: rgba(145, 94, 255, 0.1) !important;
 }
 
@@ -56,7 +56,7 @@
 
 [data-theme="light"] .project-tags span {
     background: rgba(145, 94, 255, 0.1) !important;
-    color: #915EFF !important;
+    color: #FF6B6B !important;
 }
 
 /* 4. Certificates Fixes */
@@ -127,7 +127,7 @@
 [data-theme="light"] .contact-form-premium input:focus,
 [data-theme="light"] .contact-form-premium textarea:focus {
     background: #ffffff !important;
-    border-color: #915EFF !important;
+    border-color: #FF6B6B !important;
     box-shadow: 0 0 0 3px rgba(145, 94, 255, 0.1) !important;
 }
 
@@ -179,7 +179,7 @@
     bottom: 0 !important;
     border-radius: 4px 4px 0 0 !important;
     height: 3px !important;
-    background: linear-gradient(90deg, #915EFF, #667eea) !important;
+    background: linear-gradient(90deg, #FF6B6B, #FF6B6B) !important;
 }
 
 /* 11. Hero Section Light Mode Fixes */
@@ -198,20 +198,20 @@
 
 [data-theme="light"] .tag {
     background: #ffffff !important;
-    color: #915EFF !important;
+    color: #FF6B6B !important;
     border: 1px solid rgba(145, 94, 255, 0.2) !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
 }
 
 [data-theme="light"] .name-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFA040 100%) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
 [data-theme="light"] .animated-text {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFA040 100%) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -224,7 +224,7 @@
 
 [data-theme="light"] .desc-item i {
     background: #ffffff !important;
-    color: #915EFF !important;
+    color: #FF6B6B !important;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
     border: 1px solid rgba(145, 94, 255, 0.1) !important;
 }
@@ -232,7 +232,7 @@
 /* 12. About Section Specific Fixes */
 [data-theme="light"] .section-badge-gradient {
     background: rgba(145, 94, 255, 0.1) !important;
-    color: #915EFF !important;
+    color: #FF6B6B !important;
     border: 1px solid rgba(145, 94, 255, 0.2) !important;
 }
 
@@ -262,13 +262,13 @@
 }
 
 [data-theme="light"] .highlight-text {
-    color: #667eea !important;
+    color: #FF6B6B !important;
     font-weight: 600 !important;
 }
 
 [data-theme="light"] .skill-icon {
     background: rgba(145, 94, 255, 0.1) !important;
-    color: #915EFF !important;
+    color: #FF6B6B !important;
 }
 
 /* 13. Social Icons Light Mode Override */
@@ -280,7 +280,7 @@
 }
 
 [data-theme="light"] .social-icon:hover {
-    background: linear-gradient(135deg, #915EFF 0%, #667eea 100%) !important;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF6B6B 100%) !important;
     color: #ffffff !important;
     transform: translateY(-5px) !important;
     border-color: transparent !important;
@@ -385,7 +385,7 @@
 }
 
 [data-theme="light"] .project-btn-premium {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    background: linear-gradient(135deg, #FFA040 0%, #FF6B6B 100%) !important;
     color: #ffffff !important;
     box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3) !important;
     font-weight: 600 !important;
@@ -393,22 +393,22 @@
 }
 
 [data-theme="light"] .project-btn-premium:hover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFA040 100%) !important;
     box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4) !important;
     transform: translateY(-2px) !important;
 }
 
 [data-theme="light"] .project-btn-secondary {
     background: transparent !important;
-    border: 2px solid #764ba2 !important;
-    color: #764ba2 !important;
+    border: 2px solid #FFA040 !important;
+    color: #FFA040 !important;
     box-shadow: none !important;
 }
 
 [data-theme="light"] .project-btn-secondary:hover {
     background: rgba(118, 75, 162, 0.05) !important;
-    border-color: #667eea !important;
-    color: #667eea !important;
+    border-color: #FF6B6B !important;
+    color: #FF6B6B !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 10px rgba(118, 75, 162, 0.1) !important;
 }

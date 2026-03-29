@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedinIn, FaPaperPlane, FaUser, FaCommentDots, FaGithub } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import BackgroundBlobs from './BackgroundBlobs';
 
 const Contact = () => {
     // EMAILJS CONFIGURATION
@@ -43,8 +42,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="relative py-20 bg-[#0B1F1A]">
-            <BackgroundBlobs />
+        <section id="contact" className="relative py-20 bg-[#0a0a0a]">
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -53,7 +51,7 @@ const Contact = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-[#10B981]/10 text-[#10B981] text-sm font-semibold tracking-wider mb-4 border border-[#10B981]/20">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Connect
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB] mb-4">Get In Touch</h2>
@@ -102,19 +100,19 @@ const Contact = () => {
                                     <CardElement
                                         key={index}
                                         {...additionalProps}
-                                        className="flex flex-col items-center justify-center text-center gap-3 p-6 rounded-2xl bg-[#0a1814] border border-[#10B981]/10 shadow-lg hover:border-[#10B981]/30 hover:bg-[#10B981]/5 transition-all duration-300 group h-full"
+                                        className="flex flex-col items-center justify-center text-center gap-3 p-6 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:bg-[#FFA040]/5 transition-all duration-300 group h-full"
                                         initial={{ opacity: 0, y: 30 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: index * 0.1 }}
                                         whileHover={{ y: -5 }}
                                     >
-                                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#10B981]/10 text-[#10B981] group-hover:bg-[#10B981] group-hover:text-[#0B1F1A] transition-colors duration-300 mb-2">
+                                        <div className="w-14 h-14 shrink-0 flex items-center justify-center rounded-full bg-[#FFA040]/10 text-[#FFA040] group-hover:bg-[#FFA040] group-hover:text-[#0a0a0a] transition-colors duration-300 mb-2">
                                             {item.icon}
                                         </div>
                                         <div className="flex flex-col w-full text-center">
                                             <h4 className="text-xs text-[#E5E7EB]/50 uppercase tracking-wider mb-1 font-semibold">{item.title}</h4>
-                                            <p className="text-sm md:text-base text-[#E5E7EB] font-medium group-hover:text-[#10B981] transition-colors break-words break-all">
+                                            <p className="text-sm md:text-base text-[#E5E7EB] font-medium group-hover:text-[#FFA040] transition-colors break-words break-all">
                                                 {item.value}
                                             </p>
                                         </div>
@@ -126,7 +124,7 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <motion.form
-                        className="flex-1 flex flex-col gap-6 p-8 rounded-2xl bg-[#0a1814] border border-[#10B981]/10 shadow-xl h-full justify-between"
+                        className="flex-1 flex flex-col gap-6 p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-xl h-full justify-between"
                         ref={form}
                         onSubmit={sendEmail}
                         initial={{ opacity: 0, x: 40 }}
@@ -135,7 +133,7 @@ const Contact = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div className="relative group">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#10B981]/50 group-focus-within:text-[#10B981] transition-colors">
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#FFA040]/50 group-focus-within:text-[#FFA040] transition-colors">
                                 <FaUser />
                             </div>
                             <input
@@ -143,12 +141,12 @@ const Contact = () => {
                                 name="user_name"
                                 placeholder="Your Name"
                                 required
-                                className="w-full bg-[#0B1F1A] border border-[#10B981]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#10B981]/50 focus:ring-1 focus:ring-[#10B981]/50 transition-all"
+                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
                         <div className="relative group">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#10B981]/50 group-focus-within:text-[#10B981] transition-colors">
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#FFA040]/50 group-focus-within:text-[#FFA040] transition-colors">
                                 <FaEnvelope />
                             </div>
                             <input
@@ -156,12 +154,12 @@ const Contact = () => {
                                 name="user_email"
                                 placeholder="Your Email"
                                 required
-                                className="w-full bg-[#0B1F1A] border border-[#10B981]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#10B981]/50 focus:ring-1 focus:ring-[#10B981]/50 transition-all"
+                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
                         <div className="relative group">
-                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#10B981]/50 group-focus-within:text-[#10B981] transition-colors">
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#FFA040]/50 group-focus-within:text-[#FFA040] transition-colors">
                                 <FaCommentDots />
                             </div>
                             <input
@@ -169,7 +167,7 @@ const Contact = () => {
                                 name="subject"
                                 placeholder="Subject"
                                 required
-                                className="w-full bg-[#0B1F1A] border border-[#10B981]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#10B981]/50 focus:ring-1 focus:ring-[#10B981]/50 transition-all"
+                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
@@ -179,13 +177,13 @@ const Contact = () => {
                                 placeholder="Your Message"
                                 rows="5"
                                 required
-                                className="w-full bg-[#0B1F1A] border border-[#10B981]/20 rounded-xl py-4 px-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#10B981]/50 focus:ring-1 focus:ring-[#10B981]/50 transition-all resize-none"
+                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 px-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all resize-none"
                             />
                         </div>
 
                         <motion.button
                             type="submit"
-                            className="w-full py-4 rounded-xl bg-[#10B981]/10 text-[#10B981] font-semibold border border-[#10B981]/20 flex items-center justify-center gap-2 hover:bg-[#10B981] hover:text-[#0a1814] transition-all disabled:opacity-50 disabled:cursor-not-allowed group uppercase tracking-wider"
+                            className="w-full py-4 rounded-xl bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 flex items-center justify-center gap-2 hover:bg-[#FFA040] hover:text-[#050505] transition-all disabled:opacity-50 disabled:cursor-not-allowed group uppercase tracking-wider"
                             disabled={status === 'sending'}
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
@@ -196,7 +194,7 @@ const Contact = () => {
 
                         {status === 'success' && (
                             <motion.div
-                                className="text-center text-[#10B981] font-medium mt-2"
+                                className="text-center text-[#FFA040] font-medium mt-2"
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
                             >

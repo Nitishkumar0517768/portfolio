@@ -86,7 +86,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, #915EFF 0%, #ff0080 100%);
+    background: linear-gradient(90deg, #FF6B6B 0%, #ff0080 100%);
     border-radius: 20px;
     transform: scale(0.8);
     opacity: 0;

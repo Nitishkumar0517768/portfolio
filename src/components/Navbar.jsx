@@ -60,7 +60,7 @@ const Navbar = ({ theme, setTheme }) => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#0B1F1A] shadow-lg shadow-black/10 dark:shadow-black/20 backdrop-blur-md' : 'bg-transparent'}`}
+            className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#0a0a0a] shadow-lg shadow-black/10 dark:shadow-black/20 backdrop-blur-md' : 'bg-transparent'}`}
         >
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 {/* Logo */}
@@ -79,7 +79,7 @@ const Navbar = ({ theme, setTheme }) => {
                         <motion.a
                             key={link.id}
                             href={link.href}
-                            className={`group relative text-sm font-medium transition-colors duration-300 ${activeLink === link.id ? 'text-[#10B981]' : 'text-[#0B1F1A] dark:text-[#E5E7EB] hover:text-[#10B981]'
+                            className={`group relative text-sm font-medium transition-colors duration-300 ${activeLink === link.id ? 'text-[#FFA040]' : 'text-[#0a0a0a] dark:text-[#E5E7EB] hover:text-[#FFA040]'
                                 }`}
                             onClick={() => handleNavClick(link.id)}
                             initial={{ opacity: 0, y: -20 }}
@@ -88,13 +88,14 @@ const Navbar = ({ theme, setTheme }) => {
                         >
                             {link.label}
                             {/* Active effect underline */}
-                            <span className={`absolute left-0 -bottom-1 h-[2px] bg-[#10B981] transition-all duration-300 ${activeLink === link.id ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                            <span className={`absolute left-0 -bottom-1 h-[2px] bg-[#FFA040] transition-all duration-300 ${activeLink === link.id ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                         </motion.a>
                     ))}
                     <motion.a
-                        href="/resume.pdf"
-                        download="Nitish_Kumar_Resume.pdf"
-                        className="px-5 py-2 rounded-lg bg-[#10B981]/10 text-[#10B981] font-semibold border border-[#10B981]/20 hover:bg-[#10B981] hover:text-[#0B1F1A] transition-all duration-300 shadow-[#10B981]/10"
+                        href="/resume.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 py-2 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-all duration-300 shadow-[#FFA040]/10"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: navLinks.length * 0.1 }}
@@ -108,7 +109,7 @@ const Navbar = ({ theme, setTheme }) => {
                 {/* Mobile Menu Toggle */}
                 <div className="md:hidden flex items-center gap-4">
                     <motion.button
-                        className="text-[#0B1F1A] dark:text-[#E5E7EB] hover:text-[#10B981] transition-colors"
+                        className="text-[#0a0a0a] dark:text-[#E5E7EB] hover:text-[#FFA040] transition-colors"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -122,7 +123,7 @@ const Navbar = ({ theme, setTheme }) => {
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
-                        className="md:hidden bg-[#0a1814] border-t border-[#10B981]/20 overflow-hidden shadow-xl"
+                        className="md:hidden bg-[#050505] border-t border-[#FFA040]/20 overflow-hidden shadow-xl"
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
@@ -133,7 +134,7 @@ const Navbar = ({ theme, setTheme }) => {
                                 <motion.a
                                     key={link.id}
                                     href={link.href}
-                                    className={`text-base font-medium transition-colors ${activeLink === link.id ? 'text-[#10B981]' : 'text-[#E5E7EB] hover:text-[#10B981]'
+                                    className={`text-base font-medium transition-colors ${activeLink === link.id ? 'text-[#FFA040]' : 'text-[#E5E7EB] hover:text-[#FFA040]'
                                         }`}
                                     onClick={() => handleNavClick(link.id)}
                                     initial={{ opacity: 0, x: -20 }}
@@ -145,15 +146,16 @@ const Navbar = ({ theme, setTheme }) => {
                                 </motion.a>
                             ))}
                             <motion.a
-                                href="/resume.pdf"
-                                download="Nitish_Kumar_Resume.pdf"
-                                className="mt-2 w-full px-6 py-3 text-center rounded-lg bg-[#10B981]/10 text-[#10B981] font-semibold border border-[#10B981]/20 hover:bg-[#10B981] hover:text-[#0B1F1A] transition-all duration-300"
+                                href="/resume.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 w-full px-6 py-3 text-center rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-all duration-300"
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: navLinks.length * 0.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                Download Resume
+                                View Resume
                             </motion.a>
                         </div>
                     </motion.div>

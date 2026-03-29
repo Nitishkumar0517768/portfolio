@@ -10,7 +10,7 @@ const ParticleBackground = () => {
 
         // Scene setup
         const scene = new THREE.Scene();
-        scene.fog = new THREE.FogExp2(0x0b1f1a, 0.0005);
+        scene.fog = new THREE.FogExp2(0x0a0a0a, 0.0005);
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 2000);
         camera.position.z = 800;
@@ -54,9 +54,9 @@ const ParticleBackground = () => {
         canvas.height = 32;
         const ctx = canvas.getContext('2d');
         const gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16);
-        gradient.addColorStop(0, 'rgba(16, 185, 129, 1)'); // Emerald green
-        gradient.addColorStop(0.2, 'rgba(16, 185, 129, 0.8)');
-        gradient.addColorStop(1, 'rgba(16, 185, 129, 0)');
+        gradient.addColorStop(0, 'rgba(255, 160, 64, 1)'); // Orange
+        gradient.addColorStop(0.2, 'rgba(255, 160, 64, 0.8)');
+        gradient.addColorStop(1, 'rgba(255, 160, 64, 0)');
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, 32, 32);
         const texture = new THREE.CanvasTexture(canvas);
@@ -190,7 +190,7 @@ const ParticleBackground = () => {
         };
     }, []);
 
-    return <div ref={mountRef} className="absolute inset-0 z-0 bg-gradient-to-br from-[#0B1F1A] to-[#064E3B] overflow-hidden pointer-events-auto" />;
+    return <div ref={mountRef} className="absolute inset-0 z-0 bg-[#0a0a0a] overflow-hidden pointer-events-auto" />;
 };
 
 export default ParticleBackground;
