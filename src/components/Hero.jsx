@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
 
                 {/* Text Content */}
-                <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                <div className="flex-[1.2] flex flex-col items-center md:items-start text-center md:text-left">
                     <div className="flex items-center gap-3 mb-8" data-aos="fade-down">
                         <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] border border-[#FFA040]/20 shadow-md">
                             <FaCode className="text-xs sm:text-base" />
@@ -46,10 +46,10 @@ const Hero = () => {
                             View Resume
                         </a>
                     </div>
-
+|
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-8 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
                         <span className="block mb-4">I am Nitish Kumar</span>
-                        <div className="text-[#FFA040] h-20 md:h-16 lg:h-20 flex items-center justify-center md:justify-start">
+                        <div className="text-[#FFA040] h-20 md:h-16 lg:h-20 flex items-center justify-center md:justify-start lg:whitespace-nowrap">
                             <span ref={typedEl}></span>
                         </div>
                     </h1>
