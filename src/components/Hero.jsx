@@ -47,9 +47,9 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-6 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
-                        <span className="block mb-2">I am Nitish Kumar</span>
-                        <div className="text-[#FFA040] h-12 md:h-16 lg:h-20 flex items-center justify-center md:justify-start">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-8 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
+                        <span className="block mb-4">I am Nitish Kumar</span>
+                        <div className="text-[#FFA040] h-20 md:h-16 lg:h-20 flex items-center justify-center md:justify-start">
                             <span ref={typedEl}></span>
                         </div>
                     </h1>
