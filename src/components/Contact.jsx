@@ -67,7 +67,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+                        <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-4 h-full">
                             {[
                                 ...contactInfo,
                                 {

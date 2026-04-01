@@ -30,7 +30,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Main Content */}
                     <motion.div
-                        className="p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-xl"
+                        className="p-6 sm:p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-xl"
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -41,7 +41,7 @@ const About = () => {
                             I'm <span className="font-semibold text-[#FFA040]">Nitish Kumar</span>, a passionate Full Stack Developer
                             specializing in building exceptional digital experiences. Currently pursuing
                             <span className="font-semibold text-[#FFA040]"> B.E. in Computer Science Engineering</span> at
-                            Codinggita x Swaminrayan University.
+                            Coding Gita x Swaminrayan University.
                         </p>
                         <p className="text-[#E5E7EB]/80 leading-relaxed mb-8">
                             I love transforming ideas into reality through code. My journey in web development
@@ -49,19 +49,19 @@ const About = () => {
                             I'm passionate about creating user-friendly, responsive, and visually appealing applications
                             that solve real-world problems.
                         </p>
-
-                        <div className="flex gap-8 justify-center sm:justify-start">
+|
+                        <div className="flex gap-4 sm:gap-8 justify-between sm:justify-start overflow-hidden">
                             <div className="text-center">
-                                <h4 className="text-3xl font-bold text-[#FFA040] mb-1">6+</h4>
-                                <p className="text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Projects</p>
+                                <h4 className="text-2xl sm:text-3xl font-bold text-[#FFA040] mb-1">6+</h4>
+                                <p className="text-[10px] sm:text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Projects</p>
                             </div>
                             <div className="text-center">
-                                <h4 className="text-3xl font-bold text-[#FFA040] mb-1">4+</h4>
-                                <p className="text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Certificates</p>
+                                <h4 className="text-2xl sm:text-3xl font-bold text-[#FFA040] mb-1">4+</h4>
+                                <p className="text-[10px] sm:text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Certificates</p>
                             </div>
                             <div className="text-center">
-                                <h4 className="text-3xl font-bold text-[#FFA040] mb-1">100%</h4>
-                                <p className="text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Dedication</p>
+                                <h4 className="text-2xl sm:text-3xl font-bold text-[#FFA040] mb-1">100%</h4>
+                                <p className="text-[10px] sm:text-sm text-[#E5E7EB]/70 uppercase tracking-wider">Dedication</p>
                             </div>
                         </div>
                     </motion.div>

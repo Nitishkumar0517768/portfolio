@@ -32,46 +32,57 @@ const Hero = () => {
 
                 {/* Text Content */}
                 <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] border border-[#FFA040]/20 shadow-md mb-8" data-aos="fade-down">
-                        <FaCode /> Welcome to my Portfolio
+                    <div className="flex items-center gap-3 mb-8" data-aos="fade-down">
+                        <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] border border-[#FFA040]/20 shadow-md">
+                            <FaCode className="text-xs sm:text-base" />
+                            <span className="text-xs sm:text-base">Welcome to my Portfolio</span>
+                        </div>
+                        <a 
+                            href="/resume.html" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="md:hidden flex items-center gap-2 px-4 py-2 sm:py-3 rounded-full bg-[#FFA040] text-[#0a0a0a] text-xs font-bold shadow-lg shadow-[#FFA040]/20"
+                        >
+                            View Resume
+                        </a>
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-6 leading-tight tracking-tight" data-aos="fade-up" data-aos-delay="200">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-6 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
                         <span className="block mb-2">I am Nitish Kumar</span>
-                        <div className="text-[#FFA040] h-12 md:h-16">
+                        <div className="text-[#FFA040] h-12 md:h-16 lg:h-20 flex items-center justify-center md:justify-start">
                             <span ref={typedEl}></span>
                         </div>
                     </h1>
 
-                    <div className="flex flex-col gap-4 mb-10 text-[#E5E7EB]/80" data-aos="fade-up" data-aos-delay="400">
-                        <div className="flex items-center gap-4">
-                            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
-                                <FaRocket />
+                    <div className="flex flex-col gap-4 mb-10 text-[#E5E7EB]/80 w-full" data-aos="fade-up" data-aos-delay="400">
+                        <div className="flex items-center gap-3 sm:gap-4 w-full">
+                            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
+                                <FaRocket className="text-sm sm:text-base" />
                             </span>
-                            <span>Exploring web development through projects</span>
+                            <span className="text-[13px] sm:text-base whitespace-nowrap">Exploring web development through projects</span>
                         </div>
-                        <div className="flex items-center gap-4">
-                            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
-                                <FaPaintBrush />
+                        <div className="flex items-center gap-3 sm:gap-4 w-full">
+                            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
+                                <FaPaintBrush className="text-sm sm:text-base" />
                             </span>
-                            <span>Designing simple and effective user interfaces</span>
+                            <span className="text-[13px] sm:text-base whitespace-nowrap">Designing simple and effective user interfaces</span>
                         </div>
-                        <div className="flex items-center gap-4">
-                            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
-                                <FaCogs />
+                        <div className="flex items-center gap-3 sm:gap-4 w-full">
+                            <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
+                                <FaCogs className="text-sm sm:text-base" />
                             </span>
-                            <span>Learning to build scalable full-stack applications</span>
+                            <span className="text-[13px] sm:text-base whitespace-nowrap">Learning to build scalable full-stack applications</span>
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-12" data-aos="fade-up" data-aos-delay="600">
-                        <a href="#projects" className="flex items-center gap-2 px-8 py-3 rounded-lg bg-[#FFA040] text-[#0a0a0a] font-semibold hover:bg-[#FFCF70] transition-colors shadow-lg shadow-[#FFA040]/20">
+                    <div className="grid grid-cols-2 md:flex md:flex-wrap gap-4 justify-center md:justify-start mb-12 w-full" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#projects" className="flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-[#FFA040] text-[#0a0a0a] font-semibold hover:bg-[#FFCF70] transition-colors shadow-lg shadow-[#FFA040]/20 text-sm sm:text-base">
                             <FaCode /> View Work
                         </a>
-                        <a href="#contact" className="flex items-center gap-2 px-8 py-3 rounded-lg bg-transparent text-[#FFA040] font-semibold border border-[#FFA040] hover:bg-[#FFA040]/10 transition-colors">
-                            <FaPaperPlane /> Contact Me
+                        <a href="#contact" className="flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-transparent text-[#FFA040] font-semibold border border-[#FFA040] hover:bg-[#FFA040]/10 transition-colors text-sm sm:text-base">
+                            <FaPaperPlane /> Contact
                         </a>
-                        <a href="/Nitish Kumar Resume.pdf" download="Nitish Kumar Resume.pdf" className="flex items-center gap-2 px-8 py-3 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/30 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors shadow-lg shadow-[#FFA040]/10">
+                        <a href="/Nitish Kumar Resume.pdf" download="Nitish Kumar Resume.pdf" className="col-span-2 flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/30 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors shadow-lg shadow-[#FFA040]/10 text-sm sm:text-base">
                             <FaDownload /> Resume
                         </a>
                     </div>

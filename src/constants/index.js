@@ -40,26 +40,28 @@ export const certificates = [
         issuer: "Sololearn",
         date: "January 2026",
         image: "https://res.cloudinary.com/dbknqb3e7/image/upload/v1770487951/web_devlopment_certificate_td7nvl.jpg",
-        link: "https://www.sololearn.com/certificates/CC-XXXXXXX",
+        link: "https://www.sololearn.com/certificates/CC-4EV78TE1",
     },
     {
-        name: "JavaScript Certificate",
-        issuer: "Sololearn",
-        date: "December 2025",
-        image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        name: "Gemini for Google Workspace",
+        issuer: "Simplilearn",
+        date: "March 2026",
+        image: "https://res.cloudinary.com/dbknqb3e7/image/upload/v1775059728/Screenshot_2026-04-01_213725_i88xhl.png",
+        link: "https://simpli-web.app.link/e/DaWRKtYAV1b",
     },
     {
-        name: "Python Certificate",
-        issuer: "Sololearn",
-        date: "November 2025",
-        image: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+        name: "Microsoft Copilot Studio",
+        issuer: "Simplilearn",
+        date: "March 2026",
+        image: "https://res.cloudinary.com/dbknqb3e7/image/upload/v1775059741/Screenshot_2026-04-01_213819_h2ees3.png",
+        link: "https://simpli-web.app.link/e/m1y3EUybZ1b",
     },
 ];
 
 export const education = [
     {
         title: "B.E. in Computer Science Engineering",
-        company_name: "Codinggita x Swaminrayan University",
+        company_name: "Open Pools x Swaminrayan University",
         icon: "https://cdn-icons-png.flaticon.com/512/2231/2231649.png", // University icon
         iconBg: "#383E56",
         date: "2025 - Present",
@@ -68,6 +70,17 @@ export const education = [
             "Pursuing Bachelor of Engineering in Computer Science.",
             "Specializing in Full Stack Development."
         ],
+    },
+];
+
+export const hackathons = [
+    {
+        title: "Doppelganger Hackathon Participant",
+        organizer: "Open Pools",
+        date: "Jan 2026",
+        achievement: "Participant",
+        description: "Developed a full-stack freelance marketplace platform where clients can post projects and integrated a currency conversion system to support global transactions and built an income tracking feature that allows users to monitor and manage their earnings efficiently.",
+        image: "https://res.cloudinary.com/dbknqb3e7/image/upload/v1775058140/Screenshot_2026-03-09_161118_osigen.png",
     },
 ];
 

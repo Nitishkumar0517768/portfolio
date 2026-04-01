@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import About from './components/About';
 import Projects from './components/Projects';
+import Hackathons from './components/Hackathons';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AOS from 'aos';
@@ -42,6 +43,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Hackathons />
       <Certificates />
       <Education />
       <Contact />

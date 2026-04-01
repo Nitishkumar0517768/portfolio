@@ -41,6 +41,7 @@ const Navbar = ({ theme, setTheme }) => {
         { id: 'about', label: 'About', href: '#about' },
         { id: 'skills', label: 'Skills', href: '#skills' },
         { id: 'projects', label: 'Projects', href: '#projects' },
+        { id: 'hackathons', label: 'Hackathons', href: '#hackathons' },
         { id: 'certificates', label: 'Certificates', href: '#certificates' },
         { id: 'education', label: 'Education', href: '#education' },
         { id: 'contact', label: 'Contact', href: '#contact' }
