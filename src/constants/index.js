@@ -61,7 +61,7 @@ export const certificates = [
 export const education = [
     {
         title: "B.E. in Computer Science Engineering",
-        company_name: "Open Pools x Swaminrayan University",
+        company_name: "Coding Gita x Swaminrayan University",
         icon: "https://cdn-icons-png.flaticon.com/512/2231/2231649.png", // University icon
         iconBg: "#383E56",
         date: "2025 - Present",

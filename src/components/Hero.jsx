@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram, FaCode, FaRocket, FaPaintBrush, FaCogs, FaPaperPlane, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTwitter, FaYoutube, FaCode, FaRocket, FaPaintBrush, FaCogs, FaPaperPlane, FaDownload } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import HeroBackground from './HeroBackground';
 
@@ -82,7 +82,7 @@ const Hero = () => {
                         <a href="#contact" className="flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-transparent text-[#FFA040] font-semibold border border-[#FFA040] hover:bg-[#FFA040]/10 transition-colors text-sm sm:text-base">
                             <FaPaperPlane /> Contact
                         </a>
-                        <a href="/Nitish Kumar Resume.pdf" download="Nitish Kumar Resume.pdf" className="col-span-2 flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/30 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors shadow-lg shadow-[#FFA040]/10 text-sm sm:text-base">
+                        <a href="/Nitish_Kumar_Resume.pdf" download="Nitish_Kumar_Resume.pdf" className="col-span-2 flex items-center justify-center gap-2 px-4 sm:px-8 py-3 rounded-lg bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/30 hover:bg-[#FFA040] hover:text-[#0a0a0a] transition-colors shadow-lg shadow-[#FFA040]/10 text-sm sm:text-base">
                             <FaDownload /> Resume
                         </a>
                     </div>
@@ -93,7 +93,7 @@ const Hero = () => {
                             { icon: SiLeetcode, href: "https://leetcode.com/u/Nitishkumar_05/" },
                             { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/nitish-kumar-03a34a3a1/" },
                             { icon: FaTwitter, href: "https://x.com/Nitishkumar05cg" },
-                            { icon: FaInstagram, href: "https://www.instagram.com/n_i_t_i_s_h_05/" }
+                            { icon: FaYoutube, href: "https://www.youtube.com/@coding_by_Nitish" }
                         ].map((social, idx) => (
                             <a
                                 key={idx}
