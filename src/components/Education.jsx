@@ -16,7 +16,7 @@ const EducationCard = ({ education, index }) => {
             }}
             className="w-full"
         >
-            <div className="relative group flex flex-col md:flex-row gap-6 p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:shadow-[#FFA040]/20 transition-all duration-300 overflow-hidden">
+            <div className="relative group flex flex-col md:flex-row gap-6 p-8 rounded-2xl bg-[#1A1A1A] border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:shadow-[#FFA040]/20 transition-all duration-300 overflow-hidden">
                 {/* Icon Badge */}
                 <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-[#FFA040]/10 border border-[#FFA040]/20 group-hover:bg-[#FFA040]/20 transition-colors">
@@ -35,9 +35,9 @@ const EducationCard = ({ education, index }) => {
                         <span>{education.date}</span>
                     </div>
 
-                    <h3 className="text-xl md:text-2xl font-bold text-[#E5E7EB] mb-2">{education.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold text-[#EAEAEA] mb-2">{education.title}</h3>
 
-                    <div className="flex items-center gap-2 text-[#E5E7EB]/70 mb-4 font-medium">
+                    <div className="flex items-center gap-2 text-[#9CA3AF] mb-4 font-medium">
                         <FaGraduationCap className="text-[#FFA040]" />
                         <span>{education.company_name}</span>
                     </div>
@@ -45,7 +45,7 @@ const EducationCard = ({ education, index }) => {
                     {education.points && education.points.length > 0 && (
                         <ul className="space-y-2 mt-2">
                             {education.points.map((point, idx) => (
-                                <li key={idx} className="flex items-start text-[#E5E7EB]/80 text-sm md:text-base leading-relaxed">
+                                <li key={idx} className="flex items-start text-[#9CA3AF] text-sm md:text-base leading-relaxed">
                                     <span className="text-[#FFA040] mr-2 mt-1.5">•</span>
                                     <span>{point}</span>
                                 </li>
@@ -60,7 +60,13 @@ const EducationCard = ({ education, index }) => {
 
 const Education = () => {
     return (
-        <section id="education" className="relative py-20 bg-[#0a0a0a]">
+        <section id="education" className="relative py-20 bg-[#121212]">
+
+            <Helmet>
+                <title>Education - Nitish kumar</title>
+                <meta name='description' content='Education - Nitish kumar'/>
+            </Helmet>
+
             <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -72,8 +78,8 @@ const Education = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Academic Journey
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB] mb-4">Education & Training</h2>
-                    <p className="text-[#E5E7EB]/70 max-w-2xl mx-auto">Building a strong foundation in technology and computer science</p>
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#EAEAEA] mb-4">Education & Training</h2>
+                    <p className="text-[#9CA3AF] max-w-2xl mx-auto">Building a strong foundation in technology and computer science</p>
                 </motion.div>
 
                 <div className="flex flex-col gap-8">

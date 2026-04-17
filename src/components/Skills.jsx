@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaFigma, FaNetworkWired } from 'react-icons/fa';
 import { SiTailwindcss, SiJavascript, SiExpress, SiMongodb, SiNetlify, SiRender, SiVercel, SiC, SiCplusplus } from 'react-icons/si';
@@ -18,7 +19,7 @@ const skillCategories = [
         title: "Backend",
         skills: [
             { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
-            { name: "Express JS", icon: <SiExpress className="text-[#E5E7EB]" /> },
+            { name: "Express JS", icon: <SiExpress className="text-[#EAEAEA]" /> },
             { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
             { name: "REST API", icon: <FaNetworkWired className="text-[#FFA040]" /> },
         ]
@@ -26,11 +27,11 @@ const skillCategories = [
     {
         title: "Tools",
         skills: [
-            { name: "GitHub", icon: <FaGithub className="text-[#E5E7EB]" /> },
+            { name: "GitHub", icon: <FaGithub className="text-[#EAEAEA]" /> },
             { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
             { name: "Netlify", icon: <SiNetlify className="text-[#00C7B7]" /> },
             { name: "Render", icon: <SiRender className="text-[#46E3B7]" /> },
-            { name: "Vercel", icon: <SiVercel className="text-[#E5E7EB]" /> },
+            { name: "Vercel", icon: <SiVercel className="text-[#EAEAEA]" /> },
         ]
     },
     {
@@ -45,7 +46,7 @@ const skillCategories = [
 
 const Skills = () => {
     return (
-        <section id="skills" className="relative py-20 bg-[#0a0a0a]">
+        <section id="skills" className="relative py-20 bg-[#121212]">
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -57,7 +58,7 @@ const Skills = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Technical Skills
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB]">
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#EAEAEA]">
                         My Skills
                     </h2>
                 </motion.div>
@@ -70,7 +71,7 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: catIndex * 0.1 }}
-                            className="p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-xl"
+                            className="p-8 rounded-2xl bg-[#1A1A1A] border border-[#FFA040]/10 shadow-xl"
                         >
                             <h3 className="text-2xl font-bold text-[#FFA040] mb-6 border-b border-[#FFA040]/20 pb-4">
                                 {category.title}
@@ -80,12 +81,12 @@ const Skills = () => {
                                     <motion.div
                                         key={skill.name}
                                         whileHover={{ y: -5 }}
-                                        className="group flex flex-col items-center justify-center p-4 rounded-xl bg-[#0a0a0a] border border-[#FFA040]/5 shadow-sm transition-all duration-300 hover:border-[#FFA040]/30 hover:shadow-[#FFA040]/10 hover:bg-[#FFA040]/5"
+                                        className="group flex flex-col items-center justify-center p-4 rounded-xl bg-[#121212] border border-[#FFA040]/5 shadow-sm transition-all duration-300 hover:border-[#FFA040]/30 hover:shadow-[#FFA040]/10 hover:bg-[#FFA040]/5"
                                     >
-                                        <div className="text-4xl text-[#E5E7EB]/50 mb-3 group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-500">
+                                        <div className="text-4xl text-[#9CA3AF] mb-3 group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-500">
                                             {skill.icon}
                                         </div>
-                                        <p className="text-[#E5E7EB]/80 font-medium text-sm text-center group-hover:text-[#FFA040] transition-colors">
+                                        <p className="text-[#9CA3AF] font-medium text-sm text-center group-hover:text-[#FFA040] transition-colors">
                                             {skill.name}
                                         </p>
                                     </motion.div>

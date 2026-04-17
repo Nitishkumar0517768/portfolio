@@ -10,7 +10,7 @@ const HeroBackground = () => {
         // Configuration
         const isMobile = window.innerWidth < 768;
         const particleCount = isMobile ? 400 : 1100; // Optimal performance, < 1200
-        const particleColor = 0xf97316; // The requested dark orange accent '#f97316'
+        const particleColor = 0xf97316; // The requested dark orange accent '#FFA040'
 
         // Scene, Camera, Renderer setup
         const scene = new THREE.Scene();

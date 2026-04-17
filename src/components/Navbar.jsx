@@ -40,16 +40,16 @@ const Navbar = ({ theme, setTheme }) => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled || location.pathname !== '/' ? 'bg-white/90 dark:bg-[#0a0a0a] shadow-lg shadow-black/10 dark:shadow-black/20 backdrop-blur-md' : 'bg-transparent'}`}
+            className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled || location.pathname !== '/' ? 'bg-[#121212]/90 shadow-lg shadow-black/20 backdrop-blur-md' : 'bg-transparent'}`}
         >
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 {/* Logo */}
                 <motion.div
-                    className="text-2xl font-bold tracking-wider text-white"
+                    className="text-2xl font-bold tracking-wider text-[#EAEAEA]"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <NavLink to="/" className="text-[#0a0a0a] dark:text-[#E5E7EB]">
+                    <NavLink to="/" className="text-[#EAEAEA]">
                         Nitish kumar
                     </NavLink>
                 </motion.div>
@@ -65,7 +65,7 @@ const Navbar = ({ theme, setTheme }) => {
                         >
                             <NavLink
                                 to={link.to}
-                                className={`group relative text-sm font-medium transition-colors duration-300 ${isActive(link.to) ? 'text-[#FFA040]' : 'text-[#0a0a0a] dark:text-[#E5E7EB] hover:text-[#FFA040]'
+                                className={`group relative text-sm font-medium transition-colors duration-300 ${isActive(link.to) ? 'text-[#FFA040]' : 'text-[#EAEAEA] hover:text-[#FFA040]'
                                     }`}
                                 onClick={() => setMobileMenuOpen(false)}
                             >
@@ -93,7 +93,7 @@ const Navbar = ({ theme, setTheme }) => {
                 {/* Mobile Menu Toggle */}
                 <div className="md:hidden flex items-center gap-4">
                     <motion.button
-                        className="text-[#0a0a0a] dark:text-[#E5E7EB] hover:text-[#FFA040] transition-colors"
+                        className="text-[#EAEAEA] hover:text-[#FFA040] transition-colors"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -107,7 +107,7 @@ const Navbar = ({ theme, setTheme }) => {
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
-                        className="md:hidden bg-[#050505] border-t border-[#FFA040]/20 overflow-hidden shadow-xl"
+                        className="md:hidden bg-[#1A1A1A] border-t border-[#FFA040]/20 overflow-hidden shadow-xl"
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
@@ -124,7 +124,7 @@ const Navbar = ({ theme, setTheme }) => {
                                 >
                                     <NavLink
                                         to={link.to}
-                                        className={`text-base font-medium transition-colors ${isActive(link.to) ? 'text-[#FFA040]' : 'text-[#E5E7EB] hover:text-[#FFA040]'
+                                        className={`text-base font-medium transition-colors ${isActive(link.to) ? 'text-[#FFA040]' : 'text-[#EAEAEA] hover:text-[#FFA040]'
                                             }`}
                                         onClick={() => setMobileMenuOpen(false)}
                                     >

@@ -190,7 +190,7 @@ const ParticleBackground = () => {
         };
     }, []);
 
-    return <div ref={mountRef} className="absolute inset-0 z-0 bg-[#0a0a0a] overflow-hidden pointer-events-auto" />;
+    return <div ref={mountRef} className="absolute inset-0 z-0 bg-[#121212] overflow-hidden pointer-events-auto" />;
 };
 
 export default ParticleBackground;

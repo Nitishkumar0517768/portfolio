@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ScrollToTop from './components/ScrollToTop';
+import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 
 // Section components (for direct access)
 import About from './components/About';
@@ -17,6 +19,30 @@ import Contact from './components/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+const DynamicSEO = () => {
+  const location = useLocation();
+  
+  const seoData = {
+    '/': { title: 'Nitish Kumar | Full Stack Developer', desc: 'Portfolio of Nitish Kumar, a passionate Full Stack Developer.' },
+    '/about': { title: 'About Nitish Kumar - Full Stack Developer', desc: 'About me' },
+    '/skills': { title: 'Skills - Nitish Kumar', desc: 'Skills - Nitish Kumar' },
+    '/projects': { title: 'Projects - Nitish Kumar', desc: 'Projects - Nitish Kumar' },
+    '/hackathons': { title: 'Hackathons - Nitish Kumar', desc: 'Hackathons - Nitish Kumar' },
+    '/certificates': { title: 'Certificates - Nitish Kumar', desc: 'Certificates - Nitish Kumar' },
+    '/education': { title: 'Education - Nitish Kumar', desc: 'Education - Nitish Kumar' },
+    '/contact': { title: 'Contact - Nitish Kumar', desc: 'Contact - Nitish Kumar' }
+  };
+
+  const currentSEO = seoData[location.pathname] || seoData['/'];
+
+  return (
+    <Helmet>
+      <title>{currentSEO.title}</title>
+      <meta name="description" content={currentSEO.desc} />
+    </Helmet>
+  );
+};
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('selectedTheme') || 'dark');
@@ -40,7 +66,8 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="bg-[#E5E7EB] dark:bg-[#0a0a0a] min-h-screen font-inter text-[#0a0a0a] dark:text-[#E5E7EB] overflow-x-hidden transition-colors duration-300">
+    <div className="bg-[#121212] min-h-screen font-inter text-[#EAEAEA] overflow-x-hidden transition-colors duration-300">
+      <DynamicSEO />
       <ScrollToTop />
       <Loader />
       <Navbar theme={theme} setTheme={setTheme} />

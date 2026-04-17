@@ -22,13 +22,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 overflow-hidden pt-20 pb-10 bg-[#0a0a0a]">
+        <section id="home" className="relative flex items-center justify-center px-6 md:px-12 lg:px-24 overflow-hidden pt-20 md:pt-24 pb-12 md:pb-16 bg-[#121212]">
             {/* Absolute low z-index Three.js wrapper */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 ">
                 <HeroBackground />
             </div>
 
-            <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 -mt-13">
 
                 {/* Text Content */}
                 <div className="flex-[1.2] flex flex-col items-center md:items-start text-center md:text-left">
@@ -47,14 +47,14 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E5E7EB] mb-8 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#EAEAEA] mb-8 leading-tight tracking-tight font-outfit" data-aos="fade-up" data-aos-delay="200">
                         <span className="block mb-4">I am Nitish Kumar</span>
                         <div className="text-[#FFA040] h-20 md:h-16 lg:h-20 flex items-center justify-center md:justify-start lg:whitespace-nowrap">
                             <span ref={typedEl}></span>
                         </div>
                     </h1>
 
-                    <div className="flex flex-col gap-4 mb-10 text-[#E5E7EB]/80 w-full" data-aos="fade-up" data-aos-delay="400">
+                    <div className="flex flex-col gap-4 mb-10 text-[#9CA3AF] w-full" data-aos="fade-up" data-aos-delay="400">
                         <div className="flex items-center gap-3 sm:gap-4 w-full">
                             <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFA040]/20 text-[#FFA040]">
                                 <FaRocket className="text-sm sm:text-base" />
@@ -100,7 +100,7 @@ const Hero = () => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center justify-center w-12 h-12 rounded-full border border-[#FFA040]/30 text-[#E5E7EB] hover:text-[#FFA040] hover:border-[#FFA040] hover:bg-[#FFA040]/10 transition-all duration-300"
+                                className="flex items-center justify-center w-12 h-12 rounded-full border border-[#FFA040]/30 text-[#EAEAEA] hover:text-[#FFA040] hover:border-[#FFA040] hover:bg-[#FFA040]/10 transition-all duration-300"
                             >
                                 <social.icon size={20} />
                             </a>
@@ -111,17 +111,17 @@ const Hero = () => {
                 <div className="flex-1 flex justify-center md:justify-end" data-aos="fade-left" data-aos-delay="300">
                     <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 group">
                         {/* Outer animated spinning halo ring */}
-                        <div className="absolute -inset-4 rounded-full border border-[#f97316]/30 animate-[spin_10s_linear_infinite] group-hover:border-[#f97316]/50 transition-colors duration-500 object-cover pointer-events-none">
-                            <div className="absolute top-0 left-1/2 w-3 h-3 bg-[#f97316] rounded-full shadow-[0_0_10px_#f97316] -translate-x-1/2 -translate-y-1/2"></div>
+                        <div className="absolute -inset-4 rounded-full border border-[#FFA040]/30 animate-[spin_10s_linear_infinite] group-hover:border-[#FFA040]/50 transition-colors duration-500 object-cover pointer-events-none">
+                            <div className="absolute top-0 left-1/2 w-3 h-3 bg-[#FFA040] rounded-full shadow-[0_0_10px_#FFA040] -translate-x-1/2 -translate-y-1/2"></div>
                             <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-[#FFA040] rounded-full shadow-[0_0_8px_#FFA040] -translate-x-1/2 translate-y-1/2"></div>
                         </div>
 
                         {/* Soft glow pulse center blob */}
-                        <div className="absolute inset-0 rounded-full bg-[#f97316]/20 blur-xl animate-pulse group-hover:bg-[#f97316]/40 transition-colors duration-500 pointer-events-none"></div>
+                        <div className="absolute inset-0 rounded-full bg-[#FFA040]/20 blur-xl animate-pulse group-hover:bg-[#FFA040]/40 transition-colors duration-500 pointer-events-none"></div>
                         <img
                             src="https://res.cloudinary.com/dbknqb3e7/image/upload/v1774770920/profile_image_zoom-out_qpv1sx.jpg"
                             alt="Nitish Kumar"
-                            className="relative z-10 w-full h-full object-cover rounded-full border-4 border-[#f97316]/40 group-hover:border-[#f97316] shadow-2xl shadow-[#f97316]/30 transition-all duration-500"
+                            className="relative z-10 w-full h-full object-cover rounded-full border-4 border-[#FFA040]/40 group-hover:border-[#FFA040] shadow-2xl shadow-[#FFA040]/30 transition-all duration-500"
                         />
                     </div>
                 </div>

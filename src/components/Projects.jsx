@@ -13,7 +13,7 @@ const ProjectCard = ({ index, title, description, image, github, demo, youtube }
                 delay: index * 0.15,
                 ease: [0.25, 0.4, 0.25, 1]
             }}
-            className="group w-full flex flex-col bg-[#050505] rounded-2xl overflow-hidden border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:shadow-xl hover:shadow-[#FFA040]/10 transition-all duration-300"
+            className="group w-full flex flex-col bg-[#1A1A1A] rounded-2xl overflow-hidden border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:shadow-xl hover:shadow-[#FFA040]/10 transition-all duration-300"
         >
             {/* Image Section */}
             <a href={demo} target="_blank" rel="noopener noreferrer" className="block relative w-full h-48 md:h-56 overflow-hidden">
@@ -22,13 +22,13 @@ const ProjectCard = ({ index, title, description, image, github, demo, youtube }
                     alt={title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#0a0a0a]/20 transition-opacity duration-300 group-hover:opacity-0"></div>
+                <div className="absolute inset-0 bg-[#121212]/20 transition-opacity duration-300 group-hover:opacity-0"></div>
             </a>
 
             {/* Content Section */}
             <div className="flex flex-col flex-1 p-6 md:p-8">
-                <h3 className="text-xl md:text-2xl font-bold text-[#E5E7EB] mb-3 group-hover:text-[#FFA040] transition-colors duration-300">{title}</h3>
-                <p className="text-[#E5E7EB]/70 text-sm md:text-base mb-6 flex-1 pr-4 leading-relaxed">{description}</p>
+                <h3 className="text-xl md:text-2xl font-bold text-[#EAEAEA] mb-3 group-hover:text-[#FFA040] transition-colors duration-300">{title}</h3>
+                <p className="text-[#9CA3AF] text-sm md:text-base mb-6 flex-1 pr-4 leading-relaxed">{description}</p>
 
                 <div className="flex flex-wrap items-center gap-6 mt-auto">
                     {/* Code Button */}
@@ -36,7 +36,7 @@ const ProjectCard = ({ index, title, description, image, github, demo, youtube }
                         href={github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-5 py-2.5 bg-[#FFA040]/10 text-[#FFA040] font-medium text-sm rounded-lg border border-[#FFA040]/20 hover:bg-[#FFA040] hover:text-[#050505] transition-colors shadow-md"
+                        className="flex items-center gap-2 px-5 py-2.5 bg-[#FFA040]/10 text-[#FFA040] font-medium text-sm rounded-lg border border-[#FFA040]/20 hover:bg-[#FFA040] hover:text-[#1A1A1A] transition-colors shadow-md"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={(e) => e.stopPropagation()}
@@ -50,7 +50,7 @@ const ProjectCard = ({ index, title, description, image, github, demo, youtube }
                         href={demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-[#E5E7EB] hover:text-[#FFA040] font-medium text-sm transition-colors group/link"
+                        className="flex items-center gap-2 text-[#EAEAEA] hover:text-[#FFA040] font-medium text-sm transition-colors group/link"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={(e) => e.stopPropagation()}
@@ -68,7 +68,7 @@ const ProjectCard = ({ index, title, description, image, github, demo, youtube }
                             href={youtube}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-[#E5E7EB] hover:text-[#FFA040] font-medium text-sm transition-colors group/link2"
+                            className="flex items-center gap-2 text-[#EAEAEA] hover:text-[#FFA040] font-medium text-sm transition-colors group/link2"
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={(e) => e.stopPropagation()}
@@ -111,12 +111,12 @@ const CategoryCard = ({ title, icon: Icon, delay, onClick, count, image }) => (
         </div>
         
         <div className="relative z-10 flex flex-col h-full justify-between text-left">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#0a0a0a]/60 backdrop-blur-md border border-[#FFA040]/30 text-[#FFA040] mb-6 group-hover:scale-110 transition-transform duration-500 shadow-xl">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#121212]/60 backdrop-blur-md border border-[#FFA040]/30 text-[#FFA040] mb-6 group-hover:scale-110 transition-transform duration-500 shadow-xl">
                 <Icon size={28} />
             </div>
             <div>
-                <h3 className="text-3xl font-bold text-[#E5E7EB] mb-2 group-hover:text-[#FFA040] transition-colors duration-300 drop-shadow-lg">{title}</h3>
-                <p className="text-[#E5E7EB]/80 font-medium tracking-wide uppercase text-sm drop-shadow-md">{count} Projects</p>
+                <h3 className="text-3xl font-bold text-[#EAEAEA] mb-2 group-hover:text-[#FFA040] transition-colors duration-300 drop-shadow-lg">{title}</h3>
+                <p className="text-[#9CA3AF] font-medium tracking-wide uppercase text-sm drop-shadow-md">{count} Projects</p>
             </div>
         </div>
     </motion.div>
@@ -207,7 +207,13 @@ const Projects = () => {
     const currentProjectsList = activeCategory === 'fullstack' ? fullStackProjects : cloneProjects;
 
     return (
-        <section id="projects" className="relative py-20 bg-[#0a0a0a] min-h-screen">
+        <section id="projects" className="relative py-20 bg-[#121212] min-h-screen">
+
+            <Helmet>
+                <title>Projects - Nitish kumar</title>
+                <meta name='description' content='Projects - Nitish kumar'/>
+            </Helmet>
+
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 
                 {/* Header */}
@@ -221,8 +227,8 @@ const Projects = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Portfolio
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB] mb-4">Featured Work</h2>
-                    <p className="text-[#E5E7EB]/70 max-w-2xl mx-auto">
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#EAEAEA] mb-4">Featured Work</h2>
+                    <p className="text-[#9CA3AF] max-w-2xl mx-auto">
                         Explore my projects divided into comprehensive Full-Stack applications and precise Frontend Clones.
                     </p>
                 </motion.div>
@@ -272,7 +278,7 @@ const Projects = () => {
                                 </h3>
                                 <button
                                     onClick={() => setActiveCategory(null)}
-                                    className="flex items-center gap-2 px-6 py-2.5 bg-transparent text-[#E5E7EB] font-medium border border-[#E5E7EB]/20 rounded-full hover:border-[#FFA040] hover:text-[#FFA040] transition-colors duration-300"
+                                    className="flex items-center gap-2 px-6 py-2.5 bg-transparent text-[#EAEAEA] font-medium border border-[#EAEAEA]/20 rounded-full hover:border-[#FFA040] hover:text-[#FFA040] transition-colors duration-300"
                                 >
                                     <FaArrowLeft size={14} /> Go Back
                                 </button>

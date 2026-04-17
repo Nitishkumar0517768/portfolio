@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://vercel.app/sitemap.xml
+Sitemap: http://nitish-portfolio-05.vercel.app/sitemap.xml

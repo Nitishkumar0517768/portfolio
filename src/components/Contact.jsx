@@ -7,7 +7,7 @@ import { SiLeetcode } from 'react-icons/si';
 const Contact = () => {
     // EMAILJS CONFIGURATION
     const SERVICE_ID = "service_gvukdjl";
-    const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+    const TEMPLATE_ID = "template_j8pns5d";
     const PUBLIC_KEY = "3Hkg39VW8AjgHAM_k";
 
     const form = useRef();
@@ -17,11 +17,7 @@ const Contact = () => {
         e.preventDefault();
         setStatus('sending');
 
-        if (SERVICE_ID === "YOUR_SERVICE_ID" || TEMPLATE_ID === "YOUR_TEMPLATE_ID" || PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
-            alert("Please configure your EmailJS keys in Contact.jsx to send emails.");
-            setStatus('error');
-            return;
-        }
+
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
@@ -42,7 +38,13 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="relative py-20 bg-[#0a0a0a]">
+        <section id="contact" className="relative py-20 bg-[#121212]">
+
+            <Helmet>
+                <title>Contact - Nitish kumar</title>
+                <meta name='description' content='Contact - Nitish kumar'/>
+            </Helmet>
+
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -54,8 +56,8 @@ const Contact = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-[#FFA040]/10 text-[#FFA040] text-sm font-semibold tracking-wider mb-4 border border-[#FFA040]/20">
                         Connect
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#E5E7EB] mb-4">Get In Touch</h2>
-                    <p className="text-[#E5E7EB]/70 max-w-2xl mx-auto">Let's discuss your next project</p>
+                    <h2 className="text-3xl md:text-5xl font-bold text-[#EAEAEA] mb-4">Get In Touch</h2>
+                    <p className="text-[#9CA3AF] max-w-2xl mx-auto">Let's discuss your next project</p>
                 </motion.div>
 
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch">
@@ -100,7 +102,7 @@ const Contact = () => {
                                     <CardElement
                                         key={index}
                                         {...additionalProps}
-                                        className="flex flex-col items-center justify-center text-center gap-3 p-6 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:bg-[#FFA040]/5 transition-all duration-300 group h-full"
+                                        className="flex flex-col items-center justify-center text-center gap-3 p-6 rounded-2xl bg-[#1A1A1A] border border-[#FFA040]/10 shadow-lg hover:border-[#FFA040]/30 hover:bg-[#FFA040]/5 transition-all duration-300 group h-full"
                                         initial={{ opacity: 0, y: 30 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
@@ -111,8 +113,8 @@ const Contact = () => {
                                             {item.icon}
                                         </div>
                                         <div className="flex flex-col w-full text-center">
-                                            <h4 className="text-xs text-[#E5E7EB]/50 uppercase tracking-wider mb-1 font-semibold">{item.title}</h4>
-                                            <p className="text-sm md:text-base text-[#E5E7EB] font-medium group-hover:text-[#FFA040] transition-colors break-words break-all">
+                                            <h4 className="text-xs text-[#9CA3AF] uppercase tracking-wider mb-1 font-semibold">{item.title}</h4>
+                                            <p className="text-sm md:text-base text-[#EAEAEA] font-medium group-hover:text-[#FFA040] transition-colors break-words break-all">
                                                 {item.value}
                                             </p>
                                         </div>
@@ -124,7 +126,7 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <motion.form
-                        className="flex-1 flex flex-col gap-6 p-8 rounded-2xl bg-[#050505] border border-[#FFA040]/10 shadow-xl h-full justify-between"
+                        className="flex-1 flex flex-col gap-6 p-8 rounded-2xl bg-[#1A1A1A] border border-[#FFA040]/10 shadow-xl h-full justify-between"
                         ref={form}
                         onSubmit={sendEmail}
                         initial={{ opacity: 0, x: 40 }}
@@ -138,10 +140,10 @@ const Contact = () => {
                             </div>
                             <input
                                 type="text"
-                                name="user_name"
+                                name="name"
                                 placeholder="Your Name"
                                 required
-                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
+                                className="w-full bg-[#121212] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#EAEAEA] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
@@ -151,10 +153,10 @@ const Contact = () => {
                             </div>
                             <input
                                 type="email"
-                                name="user_email"
+                                name="email"
                                 placeholder="Your Email"
                                 required
-                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
+                                className="w-full bg-[#121212] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#EAEAEA] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
@@ -164,10 +166,10 @@ const Contact = () => {
                             </div>
                             <input
                                 type="text"
-                                name="subject"
+                                name="title"
                                 placeholder="Subject"
                                 required
-                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
+                                className="w-full bg-[#121212] border border-[#FFA040]/20 rounded-xl py-4 pl-12 pr-4 text-[#EAEAEA] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all"
                             />
                         </div>
 
@@ -177,13 +179,13 @@ const Contact = () => {
                                 placeholder="Your Message"
                                 rows="5"
                                 required
-                                className="w-full bg-[#0a0a0a] border border-[#FFA040]/20 rounded-xl py-4 px-4 text-[#E5E7EB] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all resize-none"
+                                className="w-full bg-[#121212] border border-[#FFA040]/20 rounded-xl py-4 px-4 text-[#EAEAEA] placeholder-[#E5E7EB]/30 focus:outline-none focus:border-[#FFA040]/50 focus:ring-1 focus:ring-[#FFA040]/50 transition-all resize-none"
                             />
                         </div>
 
                         <motion.button
                             type="submit"
-                            className="w-full py-4 rounded-xl bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 flex items-center justify-center gap-2 hover:bg-[#FFA040] hover:text-[#050505] transition-all disabled:opacity-50 disabled:cursor-not-allowed group uppercase tracking-wider"
+                            className="w-full py-4 rounded-xl bg-[#FFA040]/10 text-[#FFA040] font-semibold border border-[#FFA040]/20 flex items-center justify-center gap-2 hover:bg-[#FFA040] hover:text-[#1A1A1A] transition-all disabled:opacity-50 disabled:cursor-not-allowed group uppercase tracking-wider"
                             disabled={status === 'sending'}
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
