@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { education } from '../constants';

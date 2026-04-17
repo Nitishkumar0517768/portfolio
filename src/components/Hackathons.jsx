@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { hackathons } from '../constants';
