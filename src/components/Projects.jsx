@@ -1,7 +1,6 @@
-import { Helmet } from 'react-helmet';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaYoutube, FaArrowLeft, FaLayerGroup, FaClone } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaYoutube, FaArrowLeft, FaLayerGroup, FaClone, FaGamepad } from 'react-icons/fa';
 
 const ProjectCard = ({ index, title, description, image, github, demo, youtube }) => {
     return (
@@ -201,19 +200,57 @@ const Projects = () => {
         }
     ];
 
-    // Navigation State: null | 'fullstack' | 'clones'
+    // 5 Game Projects
+    const gameProjects = [
+        {
+            title: "Tic Tac Toe",
+            description: "A classic strategy game featuring local multiplayer and a smart AI opponent built with the Minimax algorithm.",
+            image: "https://i.pinimg.com/736x/b9/a4/90/b9a4902f55fb487cb7eef97351090e3a.jpg",
+            github: "https://github.com/Nitishkumar0517768/Tic-Tac-Toe",
+            demo: "https://tic-tac-toe-by-nitish.netlify.app/",
+        },
+        {
+            title: "Click Counter Game",
+            description: "Test your clicking speed and reflexes in this addictive high-speed challenge with real-time scoring.",
+            image: "https://res.cloudinary.com/dbknqb3e7/image/upload/v1776429774/Screenshot_2026-04-17_181027_hprcqy.png",
+            github: "https://github.com/Nitishkumar0517768/Click-Counter-game",
+            demo: "https://click-counter-game-nitish.netlify.app/",
+        },
+        {
+            title: "Color Guessing Game",
+            description: "Challenge your color perception! Guess the correct color based on RGB values in this interactive puzzle.",
+            image: "https://i.pinimg.com/736x/87/88/ce/8788ce8cedc0a2c342668ad47739e3ed.jpg",
+            github: "https://github.com/Nitishkumar0517768/Color-guessing-game",
+            demo: "https://color-guessing-game-nitish.netlify.app/",
+        },
+        {
+            title: "Typing Test",
+            description: "Improve your typing speed and accuracy with this professionally designed typing performance tracking tool.",
+            image: "https://i.pinimg.com/736x/30/26/40/3026403f445559270671b9c021750673.jpg",
+            github: "https://github.com/Nitishkumar0517768/Typing-test",
+            demo: "https://typing-test-nitish.netlify.app/",
+        },
+        {
+            title: "Whack a mole",
+            description: "A fast-paced classic arcade-style reaction game where you must whack the moles to earn points before time runs out.",
+            image: "https://i.pinimg.com/736x/1f/c6/23/1fc623b08b3c2843efbe85fd461e1178.jpg",
+            github: "https://github.com/Nitishkumar0517768/Whack-a-mole-game",
+            demo: "https://github.com/Nitishkumar0517768/Whack-a-mole-game",
+        }
+    ];
+
+    // Navigation State: null | 'fullstack' | 'clones' | 'games'
     const [activeCategory, setActiveCategory] = useState(null);
 
     // Get active array based on state
-    const currentProjectsList = activeCategory === 'fullstack' ? fullStackProjects : cloneProjects;
+    const currentProjectsList = 
+        activeCategory === 'fullstack' ? fullStackProjects : 
+        activeCategory === 'clones' ? cloneProjects : 
+        gameProjects;
 
     return (
         <section id="projects" className="relative py-20 bg-[#121212] min-h-screen">
 
-            <Helmet>
-                <title>Projects - Nitish kumar</title>
-                <meta name='description' content='Projects - Nitish kumar'/>
-            </Helmet>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 
@@ -230,7 +267,7 @@ const Projects = () => {
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#EAEAEA] mb-4">Featured Work</h2>
                     <p className="text-[#9CA3AF] max-w-2xl mx-auto">
-                        Explore my projects divided into comprehensive Full-Stack applications and precise Frontend Clones.
+                        Explore my projects divided into comprehensive Full-Stack applications, precise Frontend Clones, and interactive Games.
                     </p>
                 </motion.div>
 
@@ -243,7 +280,7 @@ const Projects = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95 }}
                             transition={{ duration: 0.4 }}
-                            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+                            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
                         >
                             <CategoryCard 
                                 title="Full Stack Projects" 
@@ -261,6 +298,14 @@ const Projects = () => {
                                 image="https://user-images.githubusercontent.com/48913536/199025849-6e3fdfd5-3f45-463e-b7ea-71c22f42134d.png"
                                 onClick={() => setActiveCategory('clones')} 
                             />
+                            <CategoryCard 
+                                title="Interactive Games" 
+                                icon={FaGamepad} 
+                                delay={0.3}
+                                count={5}
+                                image="https://i.pinimg.com/1200x/e4/06/89/e40689f89730d5a9b4a0d76ce2b3603c.jpg"
+                                onClick={() => setActiveCategory('games')} 
+                            />
                         </motion.div>
                     )}
 
@@ -275,7 +320,8 @@ const Projects = () => {
                         >
                             <div className="flex flex-col md:flex-row items-center justify-between mb-10 gap-6 border-b border-[#FFA040]/10 pb-6">
                                 <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#E5E7EB] to-[#FFA040]">
-                                    {activeCategory === 'fullstack' ? 'Full Stack Projects' : 'Clone Projects'}
+                                    {activeCategory === 'fullstack' ? 'Full Stack Projects' : 
+                                     activeCategory === 'clones' ? 'Clone Projects' : 'Interactive Games'}
                                 </h3>
                                 <button
                                     onClick={() => setActiveCategory(null)}

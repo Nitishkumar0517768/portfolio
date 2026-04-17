@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { certificates } from "../constants";
@@ -112,10 +111,6 @@ const Certificates = () => {
     return (
         <section id="certificates" className="relative py-20 bg-[#121212]">
             
-            <Helmet>
-                <title>Certificates - Nitish kumar</title>
-                <meta name='description' content='Certificates - Nitish kumar'/>
-            </Helmet>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div

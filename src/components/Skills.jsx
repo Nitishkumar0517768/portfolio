@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaFigma, FaNetworkWired } from 'react-icons/fa';
 import { SiTailwindcss, SiJavascript, SiExpress, SiMongodb, SiNetlify, SiRender, SiVercel, SiC, SiCplusplus } from 'react-icons/si';

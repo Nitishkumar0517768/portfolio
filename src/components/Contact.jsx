@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
@@ -41,10 +40,6 @@ const Contact = () => {
     return (
         <section id="contact" className="relative py-20 bg-[#121212]">
 
-            <Helmet>
-                <title>Contact - Nitish kumar</title>
-                <meta name='description' content='Contact - Nitish kumar'/>
-            </Helmet>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div

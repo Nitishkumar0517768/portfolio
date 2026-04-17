@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { education } from '../constants';
@@ -63,10 +62,6 @@ const Education = () => {
     return (
         <section id="education" className="relative py-20 bg-[#121212]">
 
-            <Helmet>
-                <title>Education - Nitish kumar</title>
-                <meta name='description' content='Education - Nitish kumar'/>
-            </Helmet>
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12">
                 <motion.div

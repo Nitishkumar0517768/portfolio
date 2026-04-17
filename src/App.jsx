@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ScrollToTop from './components/ScrollToTop';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
 // Section components (for direct access)
@@ -24,7 +24,7 @@ const DynamicSEO = () => {
   const location = useLocation();
   
   const seoData = {
-    '/': { title: 'Nitish Kumar | Full Stack Developer', desc: 'Portfolio of Nitish Kumar, a passionate Full Stack Developer.' },
+    '/': { title: 'Nitish kumar | Full stack developer', desc: 'Portfolio of Nitish Kumar, a passionate Full Stack Developer.' },
     '/about': { title: 'About Nitish Kumar - Full Stack Developer', desc: 'About me' },
     '/skills': { title: 'Skills - Nitish Kumar', desc: 'Skills - Nitish Kumar' },
     '/projects': { title: 'Projects - Nitish Kumar', desc: 'Projects - Nitish Kumar' },

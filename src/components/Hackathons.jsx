@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { hackathons } from '../constants';
@@ -76,10 +75,6 @@ const Hackathons = () => {
         <section id="hackathons" className="relative py-20 bg-[#121212] min-h-[80vh]">
             {/* Background elements */}
 
-            <Helmet>
-                <title>Hackathons - Nitish kumar</title>
-                <meta name='description' content='Hackathons - Nitish kumar'/>
-            </Helmet>
 
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
                 <div className="absolute top-1/4 -left-1/4 w-1/2 h-1/2 bg-[#FFA040]/5 rounded-full blur-[120px]"></div>

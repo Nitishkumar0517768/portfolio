@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCode, FaLaptopCode, FaRocket, FaHeart } from 'react-icons/fa';
-import {Helmet} from "react-helmet";
-
 const About = () => {
     const skills = [
         { icon: <FaCode />, title: "Clean Code", desc: "Writing maintainable and scalable code" },
@@ -13,11 +11,6 @@ const About = () => {
 
     return (
         <section id="about" className="relative py-20 bg-[#121212]">
-
-            <Helmet>
-                <title>About Nitish kumar - Full stack developer</title>
-                <meta name='description' content='About me'/>
-            </Helmet>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
                 <motion.div
