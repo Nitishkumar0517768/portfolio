@@ -119,7 +119,7 @@ const Hero = () => {
                         {/* Soft glow pulse center blob */}
                         <div className="absolute inset-0 rounded-full bg-[#FFA040]/20 blur-xl animate-pulse group-hover:bg-[#FFA040]/40 transition-colors duration-500 pointer-events-none"></div>
                         <img
-                            src="https://res.cloudinary.com/dbknqb3e7/image/upload/v1774770920/profile_image_zoom-out_qpv1sx.jpg"
+                            src="https://res.cloudinary.com/dbknqb3e7/image/upload/v1783055538/profile-pic_pemi8m.jpg"
                             alt="Nitish Kumar"
                             className="relative z-10 w-full h-full object-cover rounded-full border-4 border-[#FFA040]/40 group-hover:border-[#FFA040] shadow-2xl shadow-[#FFA040]/30 transition-all duration-500"
                         />
